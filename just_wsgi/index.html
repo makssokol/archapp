@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Russian cities</title>
+</head>
+<body>
+    <h1>Обучающий портал</h1>
+    <br>
+    <h2>Представлен в следующих городах России:</h2><br>
+    <ul>
+        {% for city in cities %}
+        <li>{{ city.city }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
