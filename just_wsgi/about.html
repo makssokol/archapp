@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>О нас</title>
+</head>
+<body>
+    <h2>Лучшие преподаватели наших курсов:</h2>
+    <ol>
+        {% for author in authors %}
+        <li>{{ author.author }}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
