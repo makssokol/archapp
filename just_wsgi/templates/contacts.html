@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Контакты{% endblock %}
+{% block main %}
+    <h1>Адреса наших офисов:</h1>
+    <ul>
+        {% for address in addresses %}
+        <li>{{ address }}</li>
+        {% endfor %}
+    </ul>
+    <form action="" method="post">
+        <input name="subject" id="subject" type="text" placeholder="Тема сообщения" class="subject-input">
+        <br>
+        Напишите здесь свое сообщение <br>
+        <textarea name="comment" id="comment" cols="60" rows="6" placeholder="Текст сообщения"></textarea> <br>
+        Введите e-mail <input type="email" placeholder="e-mail" class="email"><br>
+        <input name="email" id="email" type="submit" value="Отправить сообщение"> <input type="reset" value="Сбросить">
+    </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Главная{% endblock %}
+{% block main %}
+    <h1>Обучающий портал</h1>
+    <br>
+    <h2>Представлен в следующих городах России:</h2><br>
+    <ul>
+        {% for city in cities %}
+        <li>{{ city.city }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
