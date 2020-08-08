@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Russian cities</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Главная{% endblock %}
+{% block main %}
     <h1>Обучающий портал</h1>
     <br>
     <h2>Представлен в следующих городах России:</h2><br>
@@ -13,5 +9,4 @@
         <li>{{ city.city }}</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
